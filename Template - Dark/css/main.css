@@ -1219,64 +1219,10 @@ a:hover {
 }
 
 .footer-social .row {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  text-align: center;
-}
-
-.footer-social .facebook:hover {
-    -webkit-transition: all 0.3s ease-in;
-    -moz-transition: all 0.3s ease-in;
-    -ms-transition: all 0.3s ease-in;
-    -o-transition: all 0.3s ease-in;
-    transition: all 0.3s ease-in;
-    color: #4267B2;
-}
-
-.footer-social .insta:hover {
-    -webkit-transition: all 0.3s ease-in;
-    -moz-transition: all 0.3s ease-in;
-    -ms-transition: all 0.3s ease-in;
-    -o-transition: all 0.3s ease-in;
-    transition: all 0.3s ease-in;
-    color: #C13584;
-}
-
-.footer-social .linked:hover {
-    -webkit-transition: all 0.3s ease-in;
-    -moz-transition: all 0.3s ease-in;
-    -ms-transition: all 0.3s ease-in;
-    -o-transition: all 0.3s ease-in;
-    transition: all 0.3s ease-in;
-    color: #0077b5;
-}
-
-.footer-social .behance:hover {
-    -webkit-transition: all 0.3s ease-in;
-    -moz-transition: all 0.3s ease-in;
-    -ms-transition: all 0.3s ease-in;
-    -o-transition: all 0.3s ease-in;
-    transition: all 0.3s ease-in;
-    color: #053eff;
-}
-
-.footer-social .dribbble:hover {
-    -webkit-transition: all 0.3s ease-in;
-    -moz-transition: all 0.3s ease-in;
-    -ms-transition: all 0.3s ease-in;
-    -o-transition: all 0.3s ease-in;
-    transition: all 0.3s ease-in;
-    color: #ea4c89;
-}
-
-.footer-social .twitter:hover {
-    -webkit-transition: all 0.3s ease-in;
-    -moz-transition: all 0.3s ease-in;
-    -ms-transition: all 0.3s ease-in;
-    -o-transition: all 0.3s ease-in;
-    transition: all 0.3s ease-in;
-    color: #1DA1F2;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
 .swingHorizontal{
