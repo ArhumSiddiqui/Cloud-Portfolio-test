@@ -27,6 +27,8 @@
       <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" rel="stylesheet">
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
       <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
       <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
       <!--[if lt IE 9]>
@@ -80,16 +82,16 @@
                   <div class="col-md-12 col-xs-12">
                      <div class="selector">
                         <h1 class="ah-headline">
-                           <span>I'm a</span>
-                              <span class="ah-words-wrapper">
-                              <b class="is-visible">DATA-ANALYST</b>
-                              <b>PHYSICIST</b>
-                              <b>CLOUD-SOLUTIONS-ARCHITECT</b>
+                           <span class="intro-text">I'm a </span>
+                           <span class="ah-words-wrapper">
+                              <b class="is-visible">Data&nbsp;Analyst</b>
+                              <b>Cloud&nbsp;Architect</b>
+                              <b>Physicist</b>
                            </span>
                         </h1>
                      </div>
                      <hr class="line">
-                     <h2 id="counter-number">Views: Loading...</h2>
+                     <h2 id="counter-number" class="view-counter">Views: Loading...</h2>
                   </div>
                </div>
                <ul class="home-social">
@@ -140,26 +142,96 @@
          </div>
       </div>
       <!-- Skills Section -->
+      <!-- 
+         Note: You need to add technology logo images in the img/tech-logos/ folder:
+         - html5.png (HTML5 logo)
+         - css3.png (CSS3 logo)
+         - javascript.png (JavaScript logo)
+         - python.png (Python logo)
+         - aws.png (AWS logo)
+         - sql.png (SQL logo)
+         
+         These should be transparent PNG images with the tech logos, ideally around 70-80px in size.
+         Until these images are added, the white circles will appear empty.
+      -->
       <div class="skills text-center" id="skills">
          <div class="container">
             <div class="row">
-               <div class="col-md-3 col-sm-6 skill">
-                  <span class="chart" data-percent="90"> <span class="percent">90</span> </span>
-                  <h5>Math & Stats</h5>
+               <div class="col-lg-12 col-md-12 col-xs-12 text-center">
+                  <h4 class="title">Skills</h4>
+                  <hr class="line">
+                  <p class="title-text">Technologies I work with</p>
                </div>
-               <div class="col-md-3 col-sm-6 skill">
-                  <span class="chart" data-percent="88"> <span class="percent">88</span> </span>
-                  <h5>Python</h5>
+            </div>
+            
+            <div class="tech-grid">
+               <div class="row">
+                  <!-- Python -->
+                  <div class="col-md-4 col-sm-6 tech-col">
+                     <div class="tech-item">
+                        <div class="tech-icon">
+                           <img src="img/tech-logos/python.png" alt="Python">
+                        </div>
+                        <h5>Python</h5>
+                        <p class="tech-desc">Experienced in Python for data analysis, machine learning, and backend development.</p>
+                     </div>
+                  </div>
+                  
+                  <!-- AWS -->
+                  <div class="col-md-4 col-sm-6 tech-col">
+                     <div class="tech-item">
+                        <div class="tech-icon">
+                           <img src="img/tech-logos/aws.png" alt="AWS">
+                        </div>
+                        <h5>AWS</h5>
+                        <p class="tech-desc">Certified AWS Solutions Architect with expertise in cloud infrastructure and services.</p>
+                     </div>
+                  </div>
+                  
+                  <!-- GitHub -->
+                  <div class="col-md-4 col-sm-6 tech-col">
+                     <div class="tech-item">
+                        <div class="tech-icon">
+                           <img src="img/tech-logos/github.png" alt="GitHub">
+                        </div>
+                        <h5>GitHub</h5>
+                        <p class="tech-desc">Experienced in version control, collaborative development, and CI/CD workflows using GitHub.</p>
+                     </div>
+                  </div>
+
+                  <!-- MySQL -->
+                  <div class="col-md-4 col-sm-6 tech-col">
+                     <div class="tech-item">
+                        <div class="tech-icon">
+                           <img src="img/tech-logos/mysql.png" alt="MySQL">
+                        </div>
+                        <h5>MySQL</h5>
+                        <p class="tech-desc">Proficient in database design, complex queries, and data management using MySQL.</p>
+                     </div>
+                  </div>
+
+                  <!-- Tableau -->
+                  <div class="col-md-4 col-sm-6 tech-col">
+                     <div class="tech-item">
+                        <div class="tech-icon">
+                           <img src="img/tech-logos/tableau.png" alt="Tableau">
+                        </div>
+                        <h5>Tableau</h5>
+                        <p class="tech-desc">Expert in creating interactive dashboards and data visualizations using Tableau.</p>
+                     </div>
+                  </div>
+
+                  <!-- Excel -->
+                  <div class="col-md-4 col-sm-6 tech-col">
+                     <div class="tech-item">
+                        <div class="tech-icon">
+                           <img src="img/tech-logos/excel.png" alt="Excel">
+                        </div>
+                        <h5>Excel</h5>
+                        <p class="tech-desc">Advanced Excel skills including pivot tables, VBA, and complex data analysis functions.</p>
+                     </div>
+                  </div>
                </div>
-               <div class="col-md-3 col-sm-6 skill">
-                  <span class="chart" data-percent="85"> <span class="percent">85</span> </span>
-                  <h5>SQL</h5>
-               </div>
-               <div class="col-md-3 col-sm-6 skill">
-                  <span class="chart" data-percent="75"> <span class="percent">75</span> </span>
-                  <h5>Power BI / Tableau</h5>
-               </div>
-      
             </div>
          </div>
       </div>
@@ -360,28 +432,10 @@
                         </div>
                      </div>
                      
-                     <!-- Project 3 -->
-                     <div class="project-card" data-category="data-analytics">
-                        <div class="project-image">
-                           <img src="img/Portfolio Images/Layoff Data illustration 800x800.png" class="img-fluid" alt="project">
-                        </div>
-                        <div class="project-info">
-                           <h3>Work Layoff Data Exploration</h3>
-                           <p>Data Analytics</p>
-                           <div class="project-tags">
-                              <span>SQL</span>
-                              <span>Python</span>
-                              <span>EDA</span>
-                              <span>Tableau</span>
-                           </div>
-                           <a href="https://github.com/ArhumSiddiqui/LayoffDataProject-2020-2023" target="_blank" class="project-link">View Project</a>
-                        </div>
-                     </div>
-                     
-                     <!-- Project 4 -->
+                     <!-- Project 3 (FRB ML Research) -->
                      <div class="project-card" data-category="machine-learning physics">
                         <div class="project-image">
-                           <img src="img/Portfolio Images/telescope 800 x 800 (1).png" class="img-fluid" alt="project">
+                           <img src="img/Portfolio Images/FRB image thumbnail 800 x 800.png" class="img-fluid" alt="project">
                         </div>
                         <div class="project-info">
                            <h3>Fast Radio Bursts ML Research</h3>
@@ -395,26 +449,10 @@
                         </div>
                      </div>
                      
-                     <!-- Project 5 -->
-                     <div class="project-card" data-category="machine-learning">
-                        <div class="project-image">
-                           <img src="img/Portfolio Images/Netflix 800 x 800.png" class="img-fluid" alt="project">
-                        </div>
-                        <div class="project-info">
-                           <h3>Netflix Movie Recommendation System</h3>
-                           <p>Machine Learning</p>
-                           <div class="project-tags">
-                              <span>NLP</span>
-                              <span>TF-IDF</span>
-                           </div>
-                           <a href="https://github.com/ArhumSiddiqui/Movie-Recommendation-AI-/blob/main/Final%20Project.ipynb" target="_blank" class="project-link">View Project</a>
-                        </div>
-                     </div>
-                     
-                     <!-- Project 6 -->
+                     <!-- Project 4 (Cloud Portfolio Website) -->
                      <div class="project-card" data-category="cloud">
                         <div class="project-image">
-                           <img src="img/Portfolio Images/AWS Cloud icon w black bg.png" class="img-fluid" alt="project">
+                           <img src="img/Portfolio Images/Cloud Portfolio Website Thumbnail.png" class="img-fluid" alt="project">
                         </div>
                         <div class="project-info">
                            <h3>Cloud Portfolio Website</h3>
@@ -433,7 +471,23 @@
                         </div>
                      </div>
                      
-                     <!-- Project 7 - AI Object Detection with AWS -->
+                     <!-- Project 5 (Netflix) -->
+                     <div class="project-card" data-category="machine-learning">
+                        <div class="project-image">
+                           <img src="img/Portfolio Images/Netflix 800 x 800.png" class="img-fluid" alt="project">
+                        </div>
+                        <div class="project-info">
+                           <h3>Netflix Movie Recommendation System</h3>
+                           <p>Machine Learning</p>
+                           <div class="project-tags">
+                              <span>NLP</span>
+                              <span>TF-IDF</span>
+                           </div>
+                           <a href="https://github.com/ArhumSiddiqui/Movie-Recommendation-AI-/blob/main/Final%20Project.ipynb" target="_blank" class="project-link">View Project</a>
+                        </div>
+                     </div>
+                     
+                     <!-- Project 6 (AI Object Detection) -->
                      <div class="project-card" data-category="machine-learning cloud">
                         <div class="project-image">
                            <img src="img/Portfolio Images/360 x 270 test.png" class="img-fluid" alt="project">
@@ -448,6 +502,24 @@
                               <span>Cloud Security</span>
                            </div>
                            <a href="https://github.com/ArhumSiddiqui/AWS-Rekognition-Image-Label-Detection" target="_blank" class="project-link">View Project</a>
+                        </div>
+                     </div>
+                     
+                     <!-- Project 7 (Work Layoff Data) -->
+                     <div class="project-card" data-category="data-analytics">
+                        <div class="project-image">
+                           <img src="img/Portfolio Images/Layoff Data illustration 800x800.png" class="img-fluid" alt="project">
+                        </div>
+                        <div class="project-info">
+                           <h3>Work Layoff Data Exploration</h3>
+                           <p>Data Analytics</p>
+                           <div class="project-tags">
+                              <span>SQL</span>
+                              <span>Python</span>
+                              <span>EDA</span>
+                              <span>Tableau</span>
+                           </div>
+                           <a href="https://github.com/ArhumSiddiqui/LayoffDataProject-2020-2023" target="_blank" class="project-link">View Project</a>
                         </div>
                      </div>
                      
