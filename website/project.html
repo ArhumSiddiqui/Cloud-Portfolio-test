@@ -5,7 +5,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-      <title>Jerome-Bootstrap Portfolio Template</title>
+      <title>Cloud Portfolio Website - Arham Siddiqui</title>
       <!-- Bootstrap -->
       <link href="css/bootstrap.min.css" rel="stylesheet">
       <!-- Main CSS -->
@@ -22,6 +22,176 @@
       <link href="https://fonts.googleapis.com/css?family=Dynalight" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i" rel="stylesheet">
+      <style>
+         body {
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+         }
+         
+         .project-header {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/background\ \(1\).png');
+            background-size: cover;
+            background-position: center;
+            height: 40vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+         }
+
+         .project-body {
+            background-color: #000000;
+            margin: 0;
+            padding: 60px 0;
+            min-height: calc(60vh - 60px);
+            display: flex;
+            flex-direction: column;
+         }
+
+         .project-content {
+            background-color: white;
+            padding: 40px;
+            margin: 0 auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 1200px;
+            flex: 1;
+         }
+
+         .project-wrapper {
+            text-align: center;
+            color: white;
+         }
+
+         .project-wrapper h3 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+         }
+
+         .project-wrapper p {
+            font-size: 1.2em;
+            color: #cccccc;
+            letter-spacing: 1px;
+         }
+
+         .project-content h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #333;
+         }
+
+         .project-content h2 {
+            font-size: 1.8em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #333;
+         }
+
+         .project-content p {
+            color: #444;
+            line-height: 1.6;
+            margin-bottom: 15px;
+         }
+
+         .tech-stack {
+            background-color: #f8f9fa;
+            padding: 20px;
+            border-radius: 5px;
+            margin: 20px 0;
+         }
+
+         .tech-stack h3 {
+            color: #333;
+            margin-bottom: 15px;
+            font-size: 1.4em;
+         }
+
+         .tech-stack ul {
+            padding-left: 20px;
+            margin-bottom: 20px;
+         }
+
+         .tech-stack ul:last-child {
+            margin-bottom: 0;
+         }
+
+         .tech-stack li {
+            margin-bottom: 8px;
+            color: #555;
+         }
+
+         .feature-list {
+            list-style-type: none;
+            padding-left: 0;
+         }
+
+         .feature-list li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+            color: #555;
+         }
+
+         .feature-list li:before {
+            content: "✅";
+            position: absolute;
+            left: 0;
+         }
+
+         .button {
+            margin-top: 60px;
+            background-color: transparent;
+            text-align: center;
+         }
+
+         .home {
+            display: inline-block;
+            padding: 15px 40px;
+            background-color: #111111;
+            transition: background-color 0.3s ease;
+            border-radius: 4px;
+         }
+
+         .home:hover {
+            background-color: #222222;
+         }
+
+         .home h3 {
+            color: white;
+            margin: 0;
+            font-size: 0.9em;
+            letter-spacing: 2px;
+         }
+
+         footer {
+            background-color: #000000;
+            padding: 20px 0;
+            margin-top: 60px;
+         }
+
+         footer h4 {
+            color: #666;
+            margin: 0;
+            font-size: 0.9em;
+            letter-spacing: 1px;
+         }
+
+         a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+         }
+
+         a:hover {
+            color: #0056b3;
+            text-decoration: none;
+         }
+      </style>
       <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
       <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
       <!--[if lt IE 9]>
@@ -43,138 +213,72 @@
       </div>
      
       <!-- Header Section --> 
-      <div class="project-header" id="project-header">
-         <div class="container">
-            <div class="row">
-               <div class="project-wrapper">
-                  <div class="col-md-12 col-xs-12 text-center">
-                     <h3>PROJECT TITLE</h3>
-                     <p>WEB DESIGN</p>
-                  </div>
-               </div>
-            </div>
+      <div class="project-header">
+         <div class="project-wrapper">
+            <h3>Cloud Portfolio Website</h3>
+            <p>Full-Stack Serverless Application</p>
          </div>
       </div>
    
    <div class="project-body">
+      <div class="container">
+         <div class="project-content">
+            <h1>🌐 Cloud Resume Challenge + Portfolio Website</h1>
+            
+            <p>This is a full-stack, serverless portfolio website built as part of the <a href="https://cloudresumechallenge.dev/" target="_blank">Cloud Resume Challenge</a>. It showcases my skills in AWS, CI/CD,  and web development, while also serving as my professional portfolio highlighting projects in data analytics, machine learning, and cloud engineering.</p>
+            <h2>🔧 Tech Stack</h2>
 
-      <!-- Facts Section --> 
-      <div class="fact" id="fact">
-         <div class="container">
-            <div class="row">
-               
-               <div class="col-md-3 col-xs-12">
-                  <div class="fact-one text-center">
-                     <h4>10</h4>
-                     <p>Tools Used</p>
-                  </div>
-               </div>
-               
-               <div class="col-md-3 col-xs-12">
-                  <div class="fact-one text-center">
-                     <h4>350</h4>
-                     <p>Hours Worked</p>
-                  </div>
-               </div>
-               
-               <div class="col-md-3 col-xs-12">
-                  <div class="fact-one text-center">
-                     <h4>52</h4>
-                     <p>Coffee Drink</p>
-                  </div>
-               </div>
-               
-               <div class="col-md-3 col-xs-12">
-                  <div class="fact-one text-center">
-                     <h4>8</h4>
-                     <p>Team Members</p>
-                  </div>
-               </div>
+            <div class="tech-stack">
+               <h3>Frontend</h3>
+               <ul>
+                  <li>HTML5, CSS3, JavaScript</li>
+                  <li>Responsive design with custom styling</li>
+                  <li>Hosted on <strong>Amazon S3</strong> with <strong>CloudFront CDN</strong></li>
+                  <li>Secured via <strong>HTTPS</strong> using <strong>AWS Certificate Manager</strong></li>
+               </ul>
 
-            </div>
-         </div>
-      </div>
-      
-      <!-- Gallery Section -->
-      <div class="gallery" id="gallery">
-         <div class="container">
-            <div class="row">
-                
-                  <div class="col-md-4 col-sm-6 col-xs-12">
-                     <a href="img/placeholder.png"><img src="img/placeholder.png" class="img-fluid item" alt="album1"></a>
-                  </div>
-                  <div class="col-md-4 col-sm-6 col-xs-12">
-                     <a href="img/placeholder.png"><img src="img/placeholder.png" class="img-fluid item" alt="album1"></a>
-                  </div>
-                  <div class="col-md-4 col-sm-6 col-xs-12">
-                     <a href="img/placeholder.png"><img src="img/placeholder.png" class="img-fluid item" alt="album1"></a>
-                  </div>
-                  <div class="col-md-4 col-sm-6 col-xs-12">
-                     <a href="img/placeholder.png"><img src="img/placeholder.png" class="img-fluid item" alt="album1"></a>
-                  </div>
-                  <div class="col-md-4 col-sm-6 col-xs-12">
-                     <a href="img/placeholder.png"><img src="img/placeholder.png" class="img-fluid item" alt="album1"></a>
-                  </div>
-                  <div class="col-md-4 col-sm-6 col-xs-12">
-                     <a href="img/placeholder.png"><img src="img/placeholder.png" class="img-fluid item" alt="album1"></a>
-                  </div>
-                  
-            </div>
-         </div>
-      </div>
+               <h3>Backend</h3>
+               <ul>
+                  <li><strong>AWS Lambda</strong> (Python)</li>
+                  <li><strong>Amazon DynamoDB</strong> to store view counter data</li>
+                  <li><strong>API Gateway</strong> to expose a RESTful endpoint</li>
+                  <li><strong>CORS</strong> configured for frontend-backend integration</li>
+               </ul>
 
-      <div class="col-md-12 col-xs-12 text-center">
-         <div class="visit-btn text-center"> 
-            <a class="btn btn-default" href="#" role="button">VISIT WEBSITE</a>
-         </div>
-      </div>
-      
-      
-      <!-- Project info Section -->
-      <div class="project" id="project">
-         <div class="container">
-            <div class="row">
-               <div class="col-md-4 col-xs-12 text-center">
-                  <h4>ROLE</h4>
-                  <p>Web Designer, Developer.</p>
-               </div>
-               <div class="col-md-4 col-xs-12 text-center">
-                  <h4>DATE</h4>
-                  <p>23 June 2021</p>
-               </div>
-               <div class="col-md-4 col-xs-12 text-center">
-                  <h4>CLIENT</h4>
-                  <p>Client Name</p>
-               </div>
+               <h3>DevOps & Infrastructure</h3>
+               <ul>
+                  <li><strong>GitHub Actions</strong> for CI/CD
+                     <ul style="margin-top: 8px;">
+                        <li>Auto-deploys frontend assets to S3 on push to main</li>
+                        <li>Lints and validates infrastructure changes</li>
+                     </ul>
+                  </li>
+                  <li><strong>Route 53</strong> for custom domain management</li>
+               </ul>
             </div>
+
+            <h2>💡 Key Features</h2>
+            <ul class="feature-list">
+               <li><strong>Visitor Counter</strong> using Lambda + DynamoDB</li>
+               <li><strong>Mobile-Friendly Design</strong> using responsive CSS</li>
+               <li><strong>CI/CD Pipeline</strong> to automate frontend updates</li>
+               <li><strong>Serverless Architecture</strong> – no EC2 or containers</li>
+               <li><strong>Professional Portfolio Integration</strong> – includes data science, ML, and cloud projects</li>
+            </ul>
          </div>
       </div>
-      
       
       <!-- Buttons Section -->
-      <div class="button" id="button">
-         <div class="container-fluid">
-            <div class="row">
-               <div class="no-padding col-lg-6 col-md-6 col-xs-12 text-center">
-                  <div class="home">
-                     <a href="#">
-                        <h3>BACK TO HOMEPAGE</h3>
-                     </a>
-                  </div>
-               </div>
-               <div class="no-padding col-lg-6 col-md-6 col-xs-12 text-center">
-                  <div class="next">
-                     <a href="#">
-                        <h3>NEXT PROJECT</h3>
-                     </a>
-                  </div>
-               </div>
+      <div class="button">
+         <a href="index.html">
+            <div class="home">
+               <h3>BACK TO HOMEPAGE</h3>
             </div>
-         </div>
+         </a>
       </div>
      
       <!-- Footer Section -->
-      <footer class="ft-project">
+      <footer>
          <div class="container">
             <div class="row">
                <div class="col-md-12 col-xs-12 text-center">
